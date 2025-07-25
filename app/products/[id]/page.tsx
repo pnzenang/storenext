@@ -5,8 +5,6 @@ import ProductRating from '@/components/single-product/ProductRating';
 import { fetchSingleProduct } from '@/utils/actions';
 import { formatCurrency } from '@/utils/format';
 import Image from 'next/image';
-const image2 =
-  'https://res.cloudinary.com/dp8tkb7hq/image/upload/v1752212376/together_rnuus1.jpg';
 
 const SingleProductPage = async ({ params }: { params: { id: string } }) => {
   const product = await fetchSingleProduct(params.id);
